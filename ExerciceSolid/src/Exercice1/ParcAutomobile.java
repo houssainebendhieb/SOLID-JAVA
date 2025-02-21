@@ -14,7 +14,7 @@ public class ParcAutomobile {
     }
     double calculeConsommationMoyenne(double distance){
         return listVoitures.stream()
-                .mapToDouble(voiture -> voiture.calculerConsommation(distance))
+                .mapToDouble(voiture -> voiture.getProperty().calculerConsommation(distance))
                 .sum();
     }
 }

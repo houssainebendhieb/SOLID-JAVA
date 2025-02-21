@@ -4,50 +4,31 @@ package Exercice1;
 public class Voiture {
 
     private String Id;
-    private double kilometrage;
-    private double litres;
-    private Marque marque;
-    private Modele modele;
+    private String marque;
+    private String modele;
+    private VoitureProperty property;
 
-    public double getKilometrage() {
-        return kilometrage;
-    }
-
-    public void setKilometrage(double kilometrage) {
-        this.kilometrage = kilometrage;
-    }
-
-    public double getLitres() {
-        return litres;
-    }
-
-    public void setLitres(double litres) {
-        this.litres = litres;
-    }
-
-    public Marque getMarque() {
+    public String getMarque() {
         return marque;
     }
 
-    public void setMarque(Marque marque) {
+    public void setMarque(String marque) {
         this.marque = marque;
     }
 
-    public Modele getModele() {
+    public String getModele() {
         return modele;
     }
 
-    public void setModele(Modele modele) {
+    public void setModele(String modele) {
         this.modele = modele;
     }
 
-    public double  calculerConsommation(double distance){
-        return this.litres*distance/100;
+    public VoitureProperty getProperty() {
+        return property;
     }
 
-    public void validate(){
-        this.kilometrage=Math.abs(this.kilometrage);
-        this.litres=Math.abs(this.litres);
+    public void setProperty(VoitureProperty property) {
+        this.property = property;
     }
-
 }
